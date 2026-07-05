@@ -1,0 +1,476 @@
+/* ============================================================
+   Contenido bilingüe (es/en) con variantes por perfil (dev/data)
+   ============================================================ */
+
+const CONTENT = {
+  es: {
+    ui: {
+      'nav.about': 'Sobre mí',
+      'nav.skills': 'Habilidades',
+      'nav.projects': 'Proyectos',
+      'nav.experience': 'Experiencia',
+      'nav.education': 'Formación',
+      'nav.contact': 'Contacto',
+      'hero.available': 'Disponible para nuevas oportunidades',
+      'hero.greeting': 'Hola, soy',
+      'hero.ctaProjects': 'Ver proyectos',
+      'hero.ctaCV': 'Descargar CV',
+      'profile.dev': 'Developer',
+      'profile.data': 'Data Analyst',
+      'sections.about': 'Sobre mí',
+      'sections.skills': 'Habilidades técnicas',
+      'sections.projects': 'Proyectos destacados',
+      'sections.experience': 'Experiencia laboral',
+      'sections.education': 'Formación académica',
+      'sections.contact': 'Contacto',
+      'contact.lead': '¿Tenés un proyecto o una oportunidad? Hablemos.',
+      'contact.cta': 'Enviame un correo',
+      'footer.made': 'Diseñado y desarrollado con dedicación',
+    },
+    profiles: {
+      dev: {
+        role: 'Desarrollador Full-Stack',
+        tagline: 'Java · Spring Boot · Angular · React Native',
+        chipTop: '☕ Java + Spring Boot',
+        chipBottom: '🅰️ Angular · ⚛️ React Native',
+        summary:
+          'Desarrollador full-stack, estudiante avanzado de Ingeniería en Sistemas (UTN) y Técnico Superior en Ciencia de Datos e IA en finalización. Construí Fletea, una plataforma de fletes en producción, y desarrollo MenteSalud, un marketplace de salud con triage por IA.',
+        cv: 'assets/cv/cv_developer_es.pdf',
+        about: [
+          'Soy <strong>desarrollador full-stack</strong>, estudiante avanzado de <strong>Ingeniería en Sistemas de Información</strong> (3.er año, UTN) y Técnico Superior en <strong>Ciencia de Datos e IA</strong> en finalización (IFTS 24).',
+          'Construí <strong>Fletea</strong>, una plataforma de fletes y mudanzas actualmente <strong>en producción</strong> (Spring Boot + Angular, pagos con Mercado Pago), y desarrollo <strong>MenteSalud</strong>, un marketplace de salud multiplataforma (web Angular + mobile React Native) con triage por IA.',
+          'Coordino el <strong>área de sistemas</strong> en la Agencia de Habilidades para el Futuro (Ministerio de Educación, GCBA). Tengo sólidos fundamentos en algoritmos, estructuras de datos y diseño de sistemas.',
+        ],
+        facts: [
+          { value: '2', label: 'Proyectos full-stack propios (1 en producción)' },
+          { value: '10+', label: 'Tecnologías en stack: Java, Angular, React Native…' },
+          { value: '3.º', label: 'Año de Ingeniería en Sistemas (UTN)' },
+        ],
+        skills: [
+          { icon: 'code', title: 'Lenguajes', items: ['Java', 'TypeScript', 'JavaScript', 'Python', 'SQL', 'HTML', 'CSS'] },
+          { icon: 'server', title: 'Backend', items: ['Spring Boot', 'Spring Data JPA', 'Hibernate', 'API REST', 'JWT', 'Flyway', 'Maven'] },
+          { icon: 'layout', title: 'Frontend Web', items: ['Angular', 'RxJS', 'Signals', 'Tailwind CSS'] },
+          { icon: 'phone', title: 'Mobile', items: ['React Native', 'Expo', 'TanStack Query', 'Zustand'] },
+          { icon: 'database', title: 'Bases de datos', items: ['PostgreSQL', 'H2', 'Modelado relacional'] },
+          { icon: 'cloud', title: 'DevOps e infraestructura', items: ['Docker', 'Docker Compose', 'Nginx', 'Git'] },
+          { icon: 'plug', title: 'Integraciones y testing', items: ['Mercado Pago (pagos + webhooks)', 'Google Maps API', 'JUnit'] },
+          { icon: 'brain', title: 'IA / Datos', items: ['Machine Learning (Scikit-learn)', 'Pandas', 'NumPy'] },
+        ],
+        projects: [
+          {
+            title: 'Fletea',
+            status: 'live',
+            statusLabel: 'En producción',
+            subtitle: 'Plataforma de fletes y mudanzas — cotización y reserva online con pago integrado (CABA y GBA)',
+            bullets: [
+              'Aplicación full-stack desarrollada y desplegada de punta a punta: backend en Spring Boot (Java 17) con API REST, autenticación JWT y motor de precios algorítmico.',
+              'Frontend en Angular 17 (standalone) con animación scroll-driven y autocompletado de direcciones.',
+              'Integración de pagos con Mercado Pago (checkout + webhooks) y cálculo de distancias con Google Distance Matrix.',
+              'Despliegue con Docker y Nginx sobre PostgreSQL.',
+            ],
+            tags: ['Java 17', 'Spring Boot', 'Angular 17', 'PostgreSQL', 'Docker', 'Nginx', 'Mercado Pago'],
+            link: 'https://www.fletea.com.ar',
+            linkLabel: 'Visitar sitio',
+          },
+          {
+            title: 'MenteSalud',
+            status: 'wip',
+            statusLabel: 'En desarrollo',
+            subtitle: 'Marketplace de salud mental con triage por IA — multiplataforma (web + iOS/Android)',
+            bullets: [
+              'Backend en Spring Boot (Java 21): API REST con 28 controladores y 47 servicios, PostgreSQL con migraciones Flyway, JWT, cifrado AES de datos clínicos y control de acceso por roles.',
+              'Web en Angular 20 (RxJS, Signals, Tailwind) y app mobile en React Native (Expo) con TanStack Query y almacenamiento seguro.',
+              'Funcionalidades: triage por IA, turnos y agenda, pagos P2P, videollamadas, historia clínica y mensajería; pruebas con JUnit.',
+            ],
+            tags: ['Java 21', 'Spring Boot', 'Angular 20', 'React Native', 'Expo', 'PostgreSQL', 'IA'],
+            link: null,
+            linkLabel: null,
+          },
+        ],
+        experience: [
+          {
+            date: '2025 — Actualidad',
+            role: 'Coordinador del Área de Sistemas',
+            org: 'Agencia de Habilidades para el Futuro — Ministerio de Educación (GCBA)',
+            bullets: [
+              'Lidero el área de sistemas, coordinando el desarrollo, la implementación y el mantenimiento de soluciones tecnológicas.',
+              'Gestiono proyectos de software con metodologías ágiles (Scrum, Kanban) en ClickUp, articulando equipos técnicos y áreas no técnicas.',
+            ],
+          },
+          {
+            date: '2023 — 2026',
+            role: 'Recepcionista',
+            org: 'Regis Hotel S.A.',
+            bullets: ['Operación de sistemas de gestión hotelera, atención al cliente y resolución de incidencias administrativas.'],
+          },
+          {
+            date: '2015 — Actualidad',
+            role: 'Tareas Administrativas',
+            org: 'Negocio familiar (alquiler de vehículos)',
+            bullets: ['Gestión administrativa y control de operaciones del negocio.'],
+          },
+        ],
+      },
+      data: {
+        role: 'Analista de Datos',
+        tagline: 'Python · SQL · Machine Learning',
+        chipTop: '🐍 Python + Pandas',
+        chipBottom: '📊 SQL · Machine Learning',
+        summary:
+          'Técnico Superior en Ciencia de Datos e IA en finalización y estudiante avanzado de Ingeniería en Sistemas (UTN). Especializado en EDA, limpieza y transformación de datos con Python y SQL, y modelos de Machine Learning supervisado con Scikit-learn.',
+        cv: 'assets/cv/cv_data_es.pdf',
+        about: [
+          'Soy <strong>Técnico Superior en Ciencia de Datos e IA</strong> en finalización (IFTS 24, graduación noviembre 2026) y estudiante avanzado de <strong>Ingeniería en Sistemas de Información</strong> (3.er año, UTN).',
+          'Me especializo en <strong>análisis exploratorio de datos (EDA)</strong>, limpieza y transformación de datos con <strong>Python</strong> (Pandas, NumPy) y <strong>SQL</strong>, y en modelos de <strong>Machine Learning supervisado</strong> con Scikit-learn.',
+          'Coordino el área de sistemas en la Agencia de Habilidades para el Futuro (Ministerio de Educación, GCBA), donde organizo y analizo datos operativos para la toma de decisiones. Perfil analítico y proactivo, orientado a <strong>convertir datos en decisiones de negocio</strong>.',
+        ],
+        facts: [
+          { value: '37', label: 'Entidades modeladas en PostgreSQL (MenteSalud)' },
+          { value: 'ML', label: 'Modelos supervisados con Scikit-learn' },
+          { value: '2026', label: 'Graduación Tecnicatura en Ciencia de Datos e IA' },
+        ],
+        skills: [
+          { icon: 'code', title: 'Lenguajes y consultas', items: ['Python', 'SQL'] },
+          { icon: 'chart', title: 'Análisis y manipulación de datos', items: ['Pandas', 'NumPy', 'EDA', 'Limpieza de datos', 'Data Wrangling'] },
+          { icon: 'brain', title: 'Machine Learning', items: ['Aprendizaje supervisado', 'Regresión lineal', 'Modelado predictivo', 'Scikit-learn'] },
+          { icon: 'sigma', title: 'Estadística', items: ['Estadística descriptiva', 'Probabilidad', 'Inferencia'] },
+          { icon: 'database', title: 'Bases de datos', items: ['PostgreSQL', 'SQL', 'Diseño de BD relacionales'] },
+          { icon: 'chart', title: 'Visualización y reportes', items: ['Excel (intermedio/avanzado)', 'Matplotlib', 'Seaborn'] },
+          { icon: 'server', title: 'Otras tecnologías', items: ['Java (Spring Boot)', 'TypeScript (Angular, React Native)', 'Docker', 'Git'] },
+          { icon: 'kanban', title: 'Metodologías', items: ['Scrum', 'Kanban', 'ClickUp'] },
+        ],
+        projects: [
+          {
+            title: 'MenteSalud',
+            status: 'wip',
+            statusLabel: 'En desarrollo',
+            subtitle: 'Marketplace de salud con triage por IA — plataforma web y mobile que conecta pacientes y profesionales',
+            bullets: [
+              'Asistente de triage conversacional por Inteligencia Artificial que orienta a cada paciente al profesional adecuado.',
+              'Trabajo con datos de extremo a extremo: modelado de datos (PostgreSQL, 37 entidades), persistencia y evaluación de resultados.',
+              'Backend en Java/Spring Boot con seguridad JWT y cifrado AES; web en Angular y app mobile en React Native.',
+            ],
+            tags: ['IA', 'PostgreSQL', 'Modelado de datos', 'Java', 'Angular', 'React Native'],
+            link: null,
+            linkLabel: null,
+          },
+          {
+            title: 'Fletea',
+            status: 'live',
+            statusLabel: 'En producción',
+            subtitle: 'Plataforma de fletes y mudanzas — cotización y reserva online con pago integrado',
+            bullets: [
+              'Motor de precios algorítmico (cálculo no lineal de distancia y costo) sobre Google Maps Distance Matrix.',
+              'Aplicación full-stack desarrollada y desplegada de punta a punta: Java/Spring Boot, Angular, PostgreSQL, Docker e integración de pagos con Mercado Pago.',
+            ],
+            tags: ['Algoritmos de pricing', 'Google Maps API', 'PostgreSQL', 'Java', 'Docker'],
+            link: 'https://www.fletea.com.ar',
+            linkLabel: 'Visitar sitio',
+          },
+        ],
+        experience: [
+          {
+            date: '2025 — Actualidad',
+            role: 'Coordinador del Área de Sistemas',
+            org: 'Agencia de Habilidades para el Futuro — Ministerio de Educación (GCBA)',
+            bullets: [
+              'Lidero el área de sistemas y coordino proyectos tecnológicos con metodologías ágiles (Scrum, Kanban) gestionadas en ClickUp.',
+              'Organizo, controlo y analizo datos operativos de los programas, elaborando reportes que apoyan la toma de decisiones.',
+            ],
+          },
+          {
+            date: '2023 — 2026',
+            role: 'Recepcionista',
+            org: 'Regis Hotel S.A.',
+            bullets: ['Registro y control de datos de huéspedes con alta precisión mediante sistemas de gestión hotelera, garantizando la integridad de la información.'],
+          },
+          {
+            date: '2015 — Actualidad',
+            role: 'Tareas Administrativas',
+            org: 'Negocio familiar (alquiler de vehículos)',
+            bullets: ['Gestión administrativa, control de operaciones y registro de datos del negocio.'],
+          },
+        ],
+      },
+    },
+    education: [
+      {
+        status: 'En curso — graduación nov. 2026',
+        title: 'Tecnicatura Superior en Ciencia de Datos e Inteligencia Artificial',
+        org: 'Instituto de Formación Técnica Superior N.º 24 (IFTS 24) — CABA',
+      },
+      {
+        status: 'En curso — 3.er año',
+        title: 'Ingeniería en Sistemas de Información',
+        org: 'Universidad Tecnológica Nacional (UTN) — Facultad Regional Buenos Aires',
+      },
+      {
+        status: 'Completo',
+        title: 'Bachiller en Ciencias Naturales',
+        org: 'Liceo Naval Militar Almirante Guillermo Brown',
+      },
+    ],
+    extras: [
+      {
+        icon: 'anchor',
+        title: 'Guardiamarina de la Reserva Naval (Armada Argentina)',
+        desc: 'Formación en liderazgo, trabajo en equipo y disciplina bajo presión.',
+      },
+      {
+        icon: 'compass',
+        title: 'Carné habilitante de navegación (patrón)',
+        desc: 'Embarcaciones a vela y motor de hasta 50 pies.',
+      },
+      {
+        icon: 'globe',
+        title: 'Idiomas',
+        desc: 'Español (nativo) · Inglés B1 (intermedio)',
+      },
+    ],
+  },
+
+  /* ==================== ENGLISH ==================== */
+  en: {
+    ui: {
+      'nav.about': 'About',
+      'nav.skills': 'Skills',
+      'nav.projects': 'Projects',
+      'nav.experience': 'Experience',
+      'nav.education': 'Education',
+      'nav.contact': 'Contact',
+      'hero.available': 'Open to new opportunities',
+      'hero.greeting': "Hi, I'm",
+      'hero.ctaProjects': 'View projects',
+      'hero.ctaCV': 'Download CV',
+      'profile.dev': 'Developer',
+      'profile.data': 'Data Analyst',
+      'sections.about': 'About me',
+      'sections.skills': 'Technical skills',
+      'sections.projects': 'Featured projects',
+      'sections.experience': 'Work experience',
+      'sections.education': 'Education',
+      'sections.contact': 'Contact',
+      'contact.lead': "Have a project or an opportunity? Let's talk.",
+      'contact.cta': 'Send me an email',
+      'footer.made': 'Designed and built with dedication',
+    },
+    profiles: {
+      dev: {
+        role: 'Full-Stack Developer',
+        tagline: 'Java · Spring Boot · Angular · React Native',
+        chipTop: '☕ Java + Spring Boot',
+        chipBottom: '🅰️ Angular · ⚛️ React Native',
+        summary:
+          'Full-stack developer, advanced Information Systems Engineering student (UTN) and near-completion Higher Technician in Data Science & AI. Built Fletea, a freight platform in production, and developing MenteSalud, an AI-powered health marketplace.',
+        cv: 'assets/cv/cv_developer_en.pdf',
+        about: [
+          "I'm a <strong>full-stack developer</strong>, advanced student of <strong>Information Systems Engineering</strong> (3rd year, UTN) and near-completion <strong>Higher Technician in Data Science & AI</strong> (IFTS 24).",
+          'I built <strong>Fletea</strong>, a freight and moving platform currently <strong>in production</strong> (Spring Boot + Angular, payments via Mercado Pago), and I\'m developing <strong>MenteSalud</strong>, a multi-platform health marketplace (Angular web + React Native mobile) with AI-powered triage.',
+          'I coordinate the <strong>systems area</strong> at the Agency for Future Skills (Ministry of Education, GCBA). Strong foundations in algorithms, data structures, and system design.',
+        ],
+        facts: [
+          { value: '2', label: 'Own full-stack projects (1 in production)' },
+          { value: '10+', label: 'Stack technologies: Java, Angular, React Native…' },
+          { value: '3rd', label: 'Year of Information Systems Engineering (UTN)' },
+        ],
+        skills: [
+          { icon: 'code', title: 'Languages', items: ['Java', 'TypeScript', 'JavaScript', 'Python', 'SQL', 'HTML', 'CSS'] },
+          { icon: 'server', title: 'Backend', items: ['Spring Boot', 'Spring Data JPA', 'Hibernate', 'REST API', 'JWT', 'Flyway', 'Maven'] },
+          { icon: 'layout', title: 'Frontend (Web)', items: ['Angular', 'RxJS', 'Signals', 'Tailwind CSS'] },
+          { icon: 'phone', title: 'Mobile', items: ['React Native', 'Expo', 'TanStack Query', 'Zustand'] },
+          { icon: 'database', title: 'Databases', items: ['PostgreSQL', 'H2', 'Relational modeling'] },
+          { icon: 'cloud', title: 'DevOps & Infrastructure', items: ['Docker', 'Docker Compose', 'Nginx', 'Git'] },
+          { icon: 'plug', title: 'Integrations & Testing', items: ['Mercado Pago (payments + webhooks)', 'Google Maps API', 'JUnit'] },
+          { icon: 'brain', title: 'AI / Data', items: ['Machine Learning (Scikit-learn)', 'Pandas', 'NumPy'] },
+        ],
+        projects: [
+          {
+            title: 'Fletea',
+            status: 'live',
+            statusLabel: 'In production',
+            subtitle: 'Freight & moving platform — online quoting and booking with integrated payments (Buenos Aires)',
+            bullets: [
+              'Full-stack application developed and deployed end-to-end: Spring Boot backend (Java 17) with REST API, JWT authentication, and an algorithmic pricing engine.',
+              'Angular 17 frontend (standalone) with scroll-driven animation and address autocompletion.',
+              'Payment integration with Mercado Pago (checkout + webhooks) and distance calculation via Google Distance Matrix.',
+              'Deployed with Docker and Nginx on PostgreSQL.',
+            ],
+            tags: ['Java 17', 'Spring Boot', 'Angular 17', 'PostgreSQL', 'Docker', 'Nginx', 'Mercado Pago'],
+            link: 'https://www.fletea.com.ar',
+            linkLabel: 'Visit site',
+          },
+          {
+            title: 'MenteSalud',
+            status: 'wip',
+            statusLabel: 'In development',
+            subtitle: 'Mental health marketplace with AI triage — multi-platform (web + iOS/Android)',
+            bullets: [
+              'Spring Boot backend (Java 21): REST API with 28 controllers and 47 services, PostgreSQL with Flyway migrations, JWT, AES encryption of clinical data, and role-based access control.',
+              'Angular 20 web (RxJS, Signals, Tailwind) and React Native (Expo) mobile app with TanStack Query and secure storage.',
+              'Features: AI triage, appointments and scheduling, P2P payments, video call sessions, electronic health records, and messaging; tested with JUnit.',
+            ],
+            tags: ['Java 21', 'Spring Boot', 'Angular 20', 'React Native', 'Expo', 'PostgreSQL', 'AI'],
+            link: null,
+            linkLabel: null,
+          },
+        ],
+        experience: [
+          {
+            date: '2025 — Present',
+            role: 'Systems Area Coordinator',
+            org: 'Agency for Future Skills — Ministry of Education (GCBA)',
+            bullets: [
+              'Lead the systems area, coordinating the development, implementation, and maintenance of technological solutions.',
+              'Manage software projects using agile methodologies (Scrum, Kanban) in ClickUp, bridging technical teams and non-technical areas.',
+            ],
+          },
+          {
+            date: '2023 — 2026',
+            role: 'Receptionist',
+            org: 'Regis Hotel S.A.',
+            bullets: ['Operation of hotel management systems, customer service, and resolution of administrative incidents.'],
+          },
+          {
+            date: '2015 — Present',
+            role: 'Administrative Assistant',
+            org: 'Family business (vehicle rental)',
+            bullets: ['Administrative management and business operations control.'],
+          },
+        ],
+      },
+      data: {
+        role: 'Data Analyst',
+        tagline: 'Python · SQL · Machine Learning',
+        chipTop: '🐍 Python + Pandas',
+        chipBottom: '📊 SQL · Machine Learning',
+        summary:
+          'Near-completion Higher Technician in Data Science & AI and advanced Information Systems Engineering student (UTN). Specialized in EDA, data cleaning and transformation with Python and SQL, and supervised Machine Learning models with Scikit-learn.',
+        cv: 'assets/cv/cv_data_en.pdf',
+        about: [
+          "I'm a near-completion <strong>Higher Technician in Data Science & AI</strong> (IFTS 24, graduating November 2026) and an advanced student of <strong>Information Systems Engineering</strong> (3rd year, UTN).",
+          'I specialize in <strong>Exploratory Data Analysis (EDA)</strong>, data cleaning and transformation with <strong>Python</strong> (Pandas, NumPy) and <strong>SQL</strong>, and <strong>supervised Machine Learning</strong> models with Scikit-learn.',
+          'I coordinate the systems area at the Agency for Future Skills (Ministry of Education, GCBA), where I organize and analyze operational data to support decision-making. Analytical and proactive, focused on <strong>turning data into business decisions</strong>.',
+        ],
+        facts: [
+          { value: '37', label: 'Entities modeled in PostgreSQL (MenteSalud)' },
+          { value: 'ML', label: 'Supervised models with Scikit-learn' },
+          { value: '2026', label: 'Data Science & AI degree graduation' },
+        ],
+        skills: [
+          { icon: 'code', title: 'Languages & Queries', items: ['Python', 'SQL'] },
+          { icon: 'chart', title: 'Data Analysis & Manipulation', items: ['Pandas', 'NumPy', 'EDA', 'Data Cleaning', 'Data Wrangling'] },
+          { icon: 'brain', title: 'Machine Learning', items: ['Supervised Learning', 'Linear Regression', 'Predictive Modeling', 'Scikit-learn'] },
+          { icon: 'sigma', title: 'Statistics', items: ['Descriptive Statistics', 'Probability', 'Inference'] },
+          { icon: 'database', title: 'Databases', items: ['PostgreSQL', 'SQL', 'Relational DB Design'] },
+          { icon: 'chart', title: 'Visualization & Reporting', items: ['Excel (Intermediate/Advanced)', 'Matplotlib', 'Seaborn'] },
+          { icon: 'server', title: 'Other Technologies', items: ['Java (Spring Boot)', 'TypeScript (Angular, React Native)', 'Docker', 'Git'] },
+          { icon: 'kanban', title: 'Methodologies', items: ['Scrum', 'Kanban', 'ClickUp'] },
+        ],
+        projects: [
+          {
+            title: 'MenteSalud',
+            status: 'wip',
+            statusLabel: 'In development',
+            subtitle: 'AI-powered health marketplace — web and mobile platform connecting patients with professionals',
+            bullets: [
+              'AI-powered conversational triage assistant that guides each patient to the right professional.',
+              'End-to-end data work: data modeling (PostgreSQL, 37 entities), persistence, and outcome evaluation.',
+              'Java/Spring Boot backend with JWT security and AES encryption; Angular web and React Native mobile app.',
+            ],
+            tags: ['AI', 'PostgreSQL', 'Data Modeling', 'Java', 'Angular', 'React Native'],
+            link: null,
+            linkLabel: null,
+          },
+          {
+            title: 'Fletea',
+            status: 'live',
+            statusLabel: 'In production',
+            subtitle: 'Freight & moving platform — online quoting and booking with integrated payments',
+            bullets: [
+              'Algorithmic pricing engine (non-linear distance and cost calculation) using Google Maps Distance Matrix.',
+              'Full-stack application developed and deployed end-to-end: Java/Spring Boot, Angular, PostgreSQL, Docker, and Mercado Pago payment integration.',
+            ],
+            tags: ['Pricing Algorithms', 'Google Maps API', 'PostgreSQL', 'Java', 'Docker'],
+            link: 'https://www.fletea.com.ar',
+            linkLabel: 'Visit site',
+          },
+        ],
+        experience: [
+          {
+            date: '2025 — Present',
+            role: 'Systems Area Coordinator',
+            org: 'Agency for Future Skills — Ministry of Education (GCBA)',
+            bullets: [
+              'Lead the systems department and coordinate technology projects using Agile methodologies (Scrum, Kanban) managed in ClickUp.',
+              'Organize, monitor, and analyze operational program data to generate reports supporting executive decision-making.',
+            ],
+          },
+          {
+            date: '2023 — 2026',
+            role: 'Receptionist',
+            org: 'Regis Hotel S.A.',
+            bullets: ['Managed high-precision guest data registration and control using hotel management systems, ensuring data integrity.'],
+          },
+          {
+            date: '2015 — Present',
+            role: 'Administrative Assistant',
+            org: 'Family business (vehicle rental)',
+            bullets: ['Handled administrative management, operational control, and business data logging.'],
+          },
+        ],
+      },
+    },
+    education: [
+      {
+        status: 'In progress — graduating Nov 2026',
+        title: 'Higher Technician in Data Science and Artificial Intelligence',
+        org: 'Higher Technical Training Institute No. 24 (IFTS 24) — Buenos Aires',
+      },
+      {
+        status: 'In progress — 3rd year',
+        title: 'Information Systems Engineering',
+        org: 'National Technological University (UTN) — Buenos Aires Regional Faculty',
+      },
+      {
+        status: 'Completed',
+        title: 'High School Diploma (Natural Sciences)',
+        org: 'Liceo Naval Militar Almirante Guillermo Brown',
+      },
+    ],
+    extras: [
+      {
+        icon: 'anchor',
+        title: 'Midshipman, Naval Reserve (Argentine Navy)',
+        desc: 'Training in leadership, teamwork, and discipline under pressure.',
+      },
+      {
+        icon: 'compass',
+        title: 'Certified Skipper (Navigation License)',
+        desc: 'Licensed for sailing and motor vessels up to 50 feet.',
+      },
+      {
+        icon: 'globe',
+        title: 'Languages',
+        desc: 'Spanish (native) · English B1 (intermediate)',
+      },
+    ],
+  },
+};
+
+/* Iconos SVG reutilizables para tarjetas */
+const ICONS = {
+  code: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>',
+  server: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>',
+  layout: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>',
+  phone: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>',
+  database: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>',
+  cloud: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>',
+  plug: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>',
+  brain: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>',
+  chart: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>',
+  sigma: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 7V4H6l6 8-6 8h12v-3"/></svg>',
+  kanban: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>',
+  anchor: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="3"/><line x1="12" y1="22" x2="12" y2="8"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/></svg>',
+  compass: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>',
+  globe: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>',
+};
